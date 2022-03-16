@@ -1,0 +1,46 @@
+.navbar .nav-item .nav-link {
+  color: #ffff;
+}
+.tecnico{
+	background: url(../img/tecnico.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+.overlay-tecnico{
+	background: rgba(19, 15, 64,.7);
+}
+.economia {
+	background: url(../img/economia.jpg );
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.overlay-economia {
+	background: rgba(19, 15, 64,.7);
+
+}
+.img-thumbnail{
+	background-color: #343a40;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 650px;
+  }
+  
+  .noti{
+
+	display: flex !important;
+	justify-content: center !important;
+	flex-wrap: wrap !important;
+
+  }
+
+  .card{
+  
+	display: flex !important;
+	width: 30em !important;
+
+  }
+
+

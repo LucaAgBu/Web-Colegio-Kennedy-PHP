@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+	<title>John F. Kennedy</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<link rel="stylesheet" href="css/main.css">
+<link href="fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+--->
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="JS/cargarNoticiaAjax.js" type="text/javascript"></script>
+
+	<!--Navegación-->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  
+  <a class="navbar-brand" href="#"> Instituto Secundario John Kennedy</a>
+  
+ 
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+          	 <li class="nav-item">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Especialidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Novedades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+			
+
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-12" type="text" placeholder="Ingrese titulo de noticia a buscar" id="tituloFiltro">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="button" href="#section1"id="section1" onclick="getNewsAll() ">BUSCAR NOTICIAS</button>
+			</form>
+			
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ESPECIALIDAD -->
+    <header class="tecnico">
+    	<div class="overlay-tecnico py-5">
+    		<div class="container-fluid">
+    			<div class="row">
+    				<div class="col-6 text-center justify-content-center align-self-center text-white">
+    					<h6><em>Ofertas educativas</em></h6>
+    					<h1 class="display-4">TECNICO EN INFORMATICA</h1>
+    					<p>Facilitar la operatoria y asesorar al usuario, en la operación y aprovechamiento de la funcionalidad de los equipos y programas.</p>
+    					<a href="#" class="btn btn-outline-secondary btn-lg"> Conoce más </a>
+    				</div>
+    				<div class="col-6 ">
+    						<img src="" class="img-fluid d-none d-sm-block"> 
+              			
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </header>
+    <header class="economia">
+    	<div class="overlay-economia py-5 ">
+    		<div class="container-fluid">
+    			<div class="row">
+    				<div class="col-6 text-center justify-content-center align-self-center text-white ">
+    					<img src="img/economia.jpg" class="img-fluid d-none d-sm-block">
+    				</div>
+    				<div class="col-6 text-center justify-content-center align-self-center text-white"> 
+    					<h6><em>Ofertas educativas</em></h6>
+    					<h1 class="display-4">ECONOMIA Y ADMINISTRACIÓN</h1>
+    					<p>Ofrecer a los estudiantes una formación que les permita acceder a marcos interpretativos para la comprensión y análisis de los fenómenos sociales, económicos y organizacionales.</p>
+    					<a href="#" class="btn btn-outline-secondary btn-lg"> Conoce más
+              			</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </header>
+
+<!-- ------------------------------ NOVEDADES ------------------------------ -->
+<div class="container-fluid  bg-white py-3">
+	<h1 class="text-center">Novedades</h1>
+	<p class="text-center">En este apartado encontraras noticias recientes</p>
+		
+		</div>	
+		
+
+        <div class="row-fluid" >
+            <div class="col-12">
+                <div class="card-columns noti" id="contenedorNoticias">
+					
+						
+					
+
+
+
+
+
+
+
+
+
+                </div>
+		
+
+
+
+
+
+
+
+<div class="conteiner-fluid py-3 ">
+	<h1 class="text-center">Nuestro Colegio</h1>
+	<div id="demo" class="carousel slide" data-ride="carousel">
+
+		<!-- Indicators -->
+		<ul class="carousel-indicators">
+		  <li data-target="#demo" data-slide-to="0" class="active"></li>
+		  <li data-target="#demo" data-slide-to="1"></li>
+		  <li data-target="#demo" data-slide-to="2"></li>
+		</ul>
+	  
+		<!-- The slideshow -->
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img src="img/diapositiva1.jpg" alt="">
+		  </div>
+		  <div class="carousel-item">
+			<img src="img/diapositiva2.jpg" alt="">
+		  </div>
+		  <div class="carousel-item">
+			<img src="img/diapositiva3.jpg" alt="">
+		  </div>
+		</div>
+	  
+		<!-- Left and right controls -->
+		<a class="carousel-control-prev" href="#demo" data-slide="prev">
+		  <span class="carousel-control-prev-icon"></span>
+		</a>
+		<a class="carousel-control-next" href="#demo" data-slide="next">
+		  <span class="carousel-control-next-icon"></span>
+		</a>
+	  </div>
+</div>
+
+<!-- ------------------------------- Pie de pagina -------------------------------- -->
+
+<div class="footer bg-dark text-white py-5"> 
+	<div class="container-fluid">
+		<div class="row text-left">
+			<div class="col">
+				<h5>Contacto<h5>
+					<hr color="white">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+						<path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+					  </svg> 0351 465-6132
+					  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+						<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+					  </svg> institutosecundariokennedy@gmail.com
+					  <a href="https://www.facebook.com/instituto.secundario.john.f.kennedy"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+						<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+					  </svg></a> Instituto Secundario John F. Kennedy
+					  
+			</div>
+			<div class="col">
+				<h5>Mapa de sitio</h5>
+				<hr color="white">
+					<h6>Inicio</h6>
+					<h6>Registrate</h6>
+					<h6>Inscripciones</h6>
+				
+			</div>
+			<div class="col">
+				<h5>Ofertas Educativas<h5>
+					<hr color="white">
+					<h6>Tecnico en informatica</h6>
+					<h6>Economia y administración</h6>
+
+			</div>
+			<div class="col">
+				<h5>Encuentranos<h5>
+					<hr color="white">
+					<h6>Córdoba Capital, Argentina</h6>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d743.8268720030029!2d-64.23455923927851!3d-31.425294246273424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a20654d0eb41%3A0xe9f90a97a9ef9fb8!2sInstituto%20Secundario%20John%20F.%20Kennedy!5e0!3m2!1ses-419!2sar!4v1619037220685!5m2!1ses-419!2sar" width="250" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
